@@ -2,6 +2,7 @@ package org.example.coffeemachine2.service;
 
 import org.example.coffeemachine2.dto.CoffeeCreateDto;
 import org.example.coffeemachine2.dto.CoffeeDto;
+import org.example.coffeemachine2.dto.CoffeeUpdateDto;
 import org.example.coffeemachine2.entity.Coffee;
 
 import java.util.List;
@@ -11,4 +12,5 @@ public interface CoffeeService {
     List<CoffeeDto> allCoffees();
     Optional<CoffeeDto> oneCoffee(Long id);
     CoffeeDto create(CoffeeCreateDto dto);
+    Optional<CoffeeDto> update(Long id, CoffeeUpdateDto dto);
 }
